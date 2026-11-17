@@ -28,8 +28,8 @@ public class HomeAlmoxarifeActivity extends AlmoxActivity {
         findViewById(R.id.cardPendentes).setOnClickListener(v -> go(AtendimentoActivity.class));
         findViewById(R.id.cardAbaixoMinimo).setOnClickListener(v -> go(AbaixoMinimoActivity.class));
         findViewById(R.id.cardUltimaRequisicao).setOnClickListener(v -> go(AtendimentoActivity.class));
-        findViewById(R.id.tvPerfil).setText("Almoxarife");
-        findViewById(R.id.tvSaudacao).setText("Olá, " + user.nome.split(" ")[0]);
+        ((TextView) findViewById(R.id.tvPerfil)).setText("Almoxarife");
+        ((TextView) findViewById(R.id.tvSaudacao)).setText("Olá, " + user.nome.split(" ")[0]);
         vm.requisicoes.observe(this, rs -> {
             long p = rs.stream().filter(x -> x.status == AppData.StatusRequisicao.PENDENTE).count();
             badge(R.id.tvBadgePendentes, p);

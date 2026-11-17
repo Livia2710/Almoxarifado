@@ -108,7 +108,7 @@
     </style>
 
     <!-- Chips de status (TextView com fundo arredondado) -->
-    <style name="Almox.Chip">
+    <style name="Almox.Chip" parent="">
         <item name="android:background">@drawable/bg_chip</item>
         <item name="android:minHeight">24dp</item>
         <item name="android:gravity">center</item>
@@ -118,19 +118,19 @@
         <item name="android:paddingBottom">3dp</item>
         <item name="android:textAppearance">@style/TextAppearance.Almox.Chip</item>
     </style>
-    <style name="Almox.Chip.Estoque">
+    <style name="Almox.Chip.Estoque" parent="Almox.Chip">
         <item name="android:backgroundTint">@color/sucesso</item>
         <item name="android:textColor">@color/branco</item>
     </style>
-    <style name="Almox.Chip.Alerta">
+    <style name="Almox.Chip.Alerta" parent="Almox.Chip">
         <item name="android:backgroundTint">@color/alerta_fundo</item>
         <item name="android:textColor">@color/alerta_texto</item>
     </style>
-    <style name="Almox.Chip.Erro">
+    <style name="Almox.Chip.Erro" parent="Almox.Chip">
         <item name="android:backgroundTint">@color/erro_fundo</item>
         <item name="android:textColor">@color/erro</item>
     </style>
-    <style name="Almox.Chip.Pendente">
+    <style name="Almox.Chip.Pendente" parent="Almox.Chip">
         <item name="android:backgroundTint">@color/pendente_fundo</item>
         <item name="android:textColor">@color/pendente_texto</item>
     </style>

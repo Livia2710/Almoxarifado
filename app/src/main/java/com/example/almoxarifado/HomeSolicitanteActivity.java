@@ -27,7 +27,7 @@ public class HomeSolicitanteActivity extends AlmoxActivity {
             }
             return false;
         });
-        findViewById(R.id.tvSaudacao).setText("Olá, " + user.nome.split(" ")[0]);
+        ((TextView) findViewById(R.id.tvSaudacao)).setText("Olá, " + user.nome.split(" ")[0]);
         findViewById(R.id.btnLerCodigo).setOnClickListener(v -> {
             Intent i = new Intent(this, ScannerActivity.class);
             i.putExtra(MODO, ABRIR_FICHA);
