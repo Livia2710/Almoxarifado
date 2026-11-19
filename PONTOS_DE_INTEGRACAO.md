@@ -4,8 +4,7 @@ Os pontos abaixo correspondem aos comentários `TODO [...]` no código. Pesquise
 
 | Arquivo e linha aprox. | Etiqueta | Trabalho para integração |
 |---|---|---|
-| `app/src/main/java/com/example/almoxarifado/AppData.java:41` | `[FIREBASE-AUTH]` | Substituir login/cadastro/sair em `FakeAuthRepository` por Firebase Auth (`signInWithEmailAndPassword`, `createUserWithEmailAndPassword`, `signOut`) e sessão persistente. |
-
+| `AppData.java:41` | `[FIREBASE-AUTH]` | Substituir login/cadastro/sair em `FakeAuthRepository` por Firebase Auth (`signInWithEmailAndPassword`, `createUserWithEmailAndPassword`, `signOut`) e sessão persistente. |
 | `AppData.java:43` | `[FIRESTORE-WRITE]` | Após cadastro Auth, criar `usuarios/{uid}` com `nome` e `email`, sem `perfil`. |
 | `AppData.java:45` | `[PERFIL]` | Ler `usuarios/{uid}.perfil` e nome; usuário sem perfil deve sair e receber aviso. |
 | `Ui.java:10` | `[REGRA-SEGURANCA]` | A proteção visual de cada tela deve ser reforçada nas regras Firestore usando o perfil de `usuarios/{uid}`. |
